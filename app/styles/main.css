@@ -4093,3 +4093,24 @@
 html {
   scroll-behavior: smooth;
 }
+
+.home {
+  background-color: #191923;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.app-layout {
+  display: flex;
+  height: calc(100vh - 32px);
+}
+.app-layout__profile {
+  width: 20%;
+  background-color: blue;
+  height: 100%;
+}
+.app-layout__content {
+  width: 80%;
+  background-color: red;
+  height: 100%;
+}
