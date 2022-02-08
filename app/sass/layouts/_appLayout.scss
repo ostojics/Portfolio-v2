@@ -24,7 +24,7 @@
     }
 
     span {
-      color: rgba($electric-blue, 0.6);
+      color: $electric-blue;
       font-size: 0.8125rem;
     }
   }
@@ -61,6 +61,30 @@
         font-size: 1.125rem;
         color: $electric-blue;
       }
+    }
+  }
+
+  &__profile-languages {
+    padding: 1.875rem 3.75rem;
+
+    h3 {
+      margin-bottom: 1.25rem;
+      color: $electric-blue;
+      font-size: 1rem;
+    }
+  }
+
+  &__languages-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__profile-language {
+    h5 {
+      color: $ghost-white;
+      font-weight: 500;
+      font-size: 0.875rem;
     }
   }
 

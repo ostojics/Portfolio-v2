@@ -4125,7 +4125,7 @@ html {
   font-size: 1rem;
 }
 .app-layout__profile-head span {
-  color: rgba(125, 249, 255, 0.6);
+  color: #7df9ff;
   font-size: 0.8125rem;
 }
 .app-layout__profile-head-text {
@@ -4157,8 +4157,42 @@ html {
   font-size: 1.125rem;
   color: #7df9ff;
 }
+.app-layout__profile-languages {
+  padding: 1.875rem 3.75rem;
+}
+.app-layout__profile-languages h3 {
+  margin-bottom: 1.25rem;
+  color: #7df9ff;
+  font-size: 1rem;
+}
+.app-layout__languages-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-layout__profile-language h5 {
+  color: #fafafc;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
 .app-layout__content {
   width: 80%;
   background-color: red;
   height: 100%;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.divider {
+  background: #646466;
+  width: 80%;
+  margin: 0 auto;
+  height: 1px;
+  opacity: 0.3;
 }
