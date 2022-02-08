@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
 .clearfix::after {
   display: block;
@@ -4097,17 +4098,64 @@ html {
 .home {
   background-color: #191923;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 1rem 20px;
 }
 
 .app-layout {
   display: flex;
-  height: calc(100vh - 32px);
+  height: calc(100vh - 2rem);
 }
 .app-layout__profile {
   width: 20%;
-  background-color: blue;
+  background-color: #24242e;
   height: 100%;
+  position: relative;
+}
+.app-layout__profile-head {
+  background-color: #2d2d39;
+  height: 35%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-layout__profile-head h3 {
+  color: #fafafc;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.app-layout__profile-head span {
+  color: rgba(125, 249, 255, 0.6);
+  font-size: 0.8125rem;
+}
+.app-layout__profile-head-text {
+  margin-bottom: 1.875rem;
+}
+.app-layout__profile-head-text img {
+  width: 5.625rem;
+  height: 5.625rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.625rem;
+}
+.app-layout__profile-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.875rem 1.875rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #2d2d39;
+}
+.app-layout__profile-footer a {
+  transition: all 0.2s ease;
+}
+.app-layout__profile-footer a:hover {
+  transform: translateY(-2px);
+}
+.app-layout__profile-footer a i {
+  font-size: 1.125rem;
+  color: #7df9ff;
 }
 .app-layout__content {
   width: 80%;

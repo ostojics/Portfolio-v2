@@ -1,11 +1,67 @@
 .app-layout {
   display: flex;
-  height: calc(100vh - 32px);
+  height: calc(100vh - 2rem);
 
   &__profile {
     width: 20%;
-    background-color: blue;
+    background-color: $dark-gunmetal;
     height: 100%;
+    position: relative;
+  }
+
+  &__profile-head {
+    background-color: $gunmetal;
+    height: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: $ghost-white;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    span {
+      color: rgba($electric-blue, 0.6);
+      font-size: 0.8125rem;
+    }
+  }
+
+  &__profile-head-text {
+    img {
+      width: 5.625rem;
+      height: 5.625rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.625rem;
+    }
+
+    margin-bottom: 1.875rem;
+  }
+
+  &__profile-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.875rem 1.875rem;
+    position: absolute;
+    bottom: 0;
+    background-color: $gunmetal;
+
+    a {
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      i {
+        font-size: 1.125rem;
+        color: $electric-blue;
+      }
+    }
   }
 
   &__content {
