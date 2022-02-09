@@ -1,11 +1,131 @@
 .app-layout {
   display: flex;
-  height: calc(100vh - 32px);
+  height: calc(100vh - 2rem);
 
   &__profile {
     width: 20%;
-    background-color: blue;
+    background-color: $dark-gunmetal;
     height: 100%;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &__profile-content {
+    height: calc(100vh - 32px - 51px - 217px);
+    overflow-y: scroll;
+  }
+
+  &__profile-head {
+    background-color: $gunmetal;
+    height: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: $ghost-white;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    span {
+      color: $electric-blue;
+      font-size: 0.8125rem;
+    }
+  }
+
+  &__profile-head-text {
+    img {
+      width: 5.625rem;
+      height: 5.625rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.625rem;
+    }
+
+    margin-bottom: 1.875rem;
+  }
+
+  &__profile-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.875rem 1.875rem;
+    position: absolute;
+    bottom: 0;
+    background-color: $gunmetal;
+
+    a {
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      i {
+        font-size: 1.125rem;
+        color: $electric-blue;
+      }
+    }
+  }
+
+  &__profile-languages {
+    padding: 1.875rem 3.75rem;
+
+    h3 {
+      margin-bottom: 1.25rem;
+      color: $electric-blue;
+      font-size: 1rem;
+    }
+  }
+
+  &__languages-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__profile-language {
+    h5 {
+      color: $ghost-white;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__profile-skills {
+    padding: 1.875rem 3.75rem;
+
+    h3 {
+      margin-bottom: 1.25rem;
+      color: $electric-blue;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+
+  &__skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      place-self: center;
+    }
   }
 
   &__content {
