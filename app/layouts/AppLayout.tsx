@@ -27,7 +27,28 @@ const AppLayout: React.FC = ({children}) => {
             </div>
           </div>
           <Divider />
+          <div className="app-layout__profile-skills">
+            <Text tag="h3">Some of the tools I use</Text>
+            <div className="app-layout__skills-container">
+              <img src="/assets/icons/html5.svg" alt="html5" />
+              <img src="/assets/icons/css3.svg" alt="css3" />
+              <img src="/assets/icons/sass.svg" alt="sass" />
+              <img src="/assets/icons/javascript.svg" alt="javascript" />
+              <img src="/assets/icons/typescript.svg" alt="typescript" />
+              <img src="/assets/icons/react-icon.svg" alt="react-icon" />
+              <img src="/assets/icons/redux.svg" alt="redux" />
+              <img src="/assets/icons/figma-icon.svg" alt="figma" />
+              <img src="/assets/icons/git-icon.svg" alt="git" />
+              <img src="/assets/icons/mongodb.svg" alt="mongodb" />
+              <img src="/assets/icons/postgresql.svg" alt="postgresql" />
+              <img src="/assets/icons/prisma.svg" alt="prisma" />
+              <img src="/assets/icons/nodejs.svg" alt="nodejs" />
+              <img src="/assets/icons/expressjs.svg" alt="express" />
+              <img src="/assets/icons/jest.svg" alt="jest" />
+            </div>
+          </div>
         </div>
+
         <div className="app-layout__profile-footer">
           <a href="https://github.com/ostojics" target="_blank" rel="noopener noreferrer">
             <i className="ion-social-github" />

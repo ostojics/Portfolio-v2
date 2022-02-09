@@ -4111,6 +4111,19 @@ html {
   height: 100%;
   position: relative;
 }
+.app-layout ::-webkit-scrollbar {
+  display: none;
+}
+.app-layout ::-webkit-scrollbar-thumb {
+  display: none;
+}
+.app-layout ::-webkit-scrollbar-track {
+  display: none;
+}
+.app-layout__profile-content {
+  height: calc(100vh - 32px - 51px - 217px);
+  overflow-y: scroll;
+}
 .app-layout__profile-head {
   background-color: #2d2d39;
   height: 35%;
@@ -4174,6 +4187,25 @@ html {
   color: #fafafc;
   font-weight: 500;
   font-size: 0.875rem;
+}
+.app-layout__profile-skills {
+  padding: 1.875rem 3.75rem;
+}
+.app-layout__profile-skills h3 {
+  margin-bottom: 1.25rem;
+  color: #7df9ff;
+  font-size: 1rem;
+  text-align: left;
+}
+.app-layout__skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.app-layout__skills-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  place-self: center;
 }
 .app-layout__content {
   width: 80%;
