@@ -48,7 +48,6 @@ const AppLayout: React.FC = ({children}) => {
             </div>
           </div>
         </div>
-
         <div className="app-layout__profile-footer">
           <a href="https://github.com/ostojics" target="_blank" rel="noopener noreferrer">
             <i className="ion-social-github" />
