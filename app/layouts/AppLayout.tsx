@@ -9,7 +9,7 @@ const AppLayout: React.FC = ({children}) => {
       <div className="app-layout__profile">
         <div className="app-layout__profile-head">
           <div className="app-layout__profile-head-text">
-            <img src="/assets/maturska.jpg" alt="profile" />
+            <img src="/assets/images/maturska.jpg" alt="profile" />
             <Text tag="h3">Slobodan Ostojić</Text>
             <Text tag="span">Web Developer</Text>
           </div>

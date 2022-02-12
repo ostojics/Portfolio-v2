@@ -2,4 +2,38 @@
   background-color: $eerie-black;
   min-height: 100vh;
   padding: 1rem 20px;
+
+  &__content {
+    padding: 30px 20px;
+    padding-top: 1px;
+    padding-right: 0px;
+  }
+
+  &__header {
+    background-image: linear-gradient(
+        90deg,
+        rgba(45, 45, 58, 0.6) 15%,
+        rgba(45, 45, 58, 0.4) 50%,
+        rgba(43, 43, 53, 0.4) 100%
+      ),
+      url(/assets/images/wp.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: top;
+    padding: 5rem 4rem;
+  }
+
+  &__title {
+    color: $ghost-white;
+    font-size: 3.125rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    color: rgba($electric-blue, 0.75);
+    font-size: 1.25rem;
+    font-style: italic;
+  }
 }
