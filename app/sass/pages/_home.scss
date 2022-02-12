@@ -1,10 +1,10 @@
 .home {
   background-color: $eerie-black;
   min-height: 100vh;
-  padding: 1rem 20px;
+  padding: 1rem 1.25rem;
 
   &__content {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     padding-top: 1px;
     padding-right: 0px;
   }
@@ -35,5 +35,22 @@
     color: rgba($electric-blue, 0.75);
     font-size: 1.25rem;
     font-style: italic;
+  }
+
+  &__projects {
+    margin-top: 1.25rem;
+  }
+
+  &__section-title {
+    color: $ghost-white;
+    font-weight: 600;
+    font-size: 1.4375rem;
+  }
+
+  &__projects-container {
+    margin-top: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
   }
 }

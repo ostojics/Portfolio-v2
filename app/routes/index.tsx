@@ -1,3 +1,4 @@
+import ProjectCard from '~/components/ProjectCard/ProjectCard';
 import Text from '~/components/Text/Text';
 import AppLayout from '~/layouts/AppLayout';
 
@@ -13,6 +14,46 @@ export default function Index() {
             <Text tag="h4" className="home__subtitle">
               I'm a web developer specializing in Frontend technologies
             </Text>
+          </div>
+          <div className="home__projects">
+            <Text tag="h2" className="home__section-title">
+              My Projects
+            </Text>
+            <div className="home__projects-container">
+              <ProjectCard
+                title="Vrata Jadrana"
+                description="description"
+                technologiesUrls={[
+                  '/assets/icons/typescript.svg',
+                  '/assets/icons/react-icon.svg',
+                  '/assets/icons/redux.svg',
+                ]}
+                sourceUrl=""
+                demoUrl=""
+              />
+              <ProjectCard
+                title="Vrata Jadrana"
+                description="description"
+                technologiesUrls={[
+                  '/assets/icons/typescript.svg',
+                  '/assets/icons/react-icon.svg',
+                  '/assets/icons/redux.svg',
+                ]}
+                sourceUrl=""
+                demoUrl=""
+              />
+              <ProjectCard
+                title="Vrata Jadrana"
+                description="description"
+                technologiesUrls={[
+                  '/assets/icons/typescript.svg',
+                  '/assets/icons/react-icon.svg',
+                  '/assets/icons/redux.svg',
+                ]}
+                sourceUrl=""
+                demoUrl=""
+              />
+            </div>
           </div>
         </div>
       </AppLayout>

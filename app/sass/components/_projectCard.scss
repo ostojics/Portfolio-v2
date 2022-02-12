@@ -1,0 +1,58 @@
+.project-card {
+  border-radius: 0.3125rem;
+  padding: 1rem;
+  background: $gunmetal;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__title {
+    color: $electric-blue;
+    margin-bottom: 0.3125rem;
+    font-size: 1.125rem;
+  }
+
+  &__description {
+    color: rgba($white, 0.4);
+    font-size: 0.875rem;
+    line-height: 145%;
+  }
+
+  &__divider {
+    margin-top: 0.625rem;
+  }
+
+  &__technologies {
+    margin-top: 0.75rem;
+
+    img {
+      width: 1.5625rem;
+      height: 1.5625rem;
+      margin-right: 0.4375rem;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $electric-blue;
+      margin-right: 0.4375rem;
+    }
+
+    i {
+      color: $electric-blue;
+      margin-top: 1px;
+    }
+  }
+}
