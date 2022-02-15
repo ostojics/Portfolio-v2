@@ -4098,7 +4098,52 @@ html {
 .home {
   background-color: #191923;
   min-height: 100vh;
-  padding: 1rem 20px;
+  padding: 1rem 1.25rem;
+  overflow: hidden;
+}
+.home__content {
+  padding: 1.875rem 1.25rem;
+  padding-top: 1px;
+  padding-right: 0px;
+}
+.home__header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(45, 45, 58, 0.6) 15%,
+      rgba(45, 45, 58, 0.4) 50%,
+      rgba(43, 43, 53, 0.4) 100%
+    ),
+    url(/assets/images/wp.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: top;
+  padding: 5rem 4rem;
+}
+.home__title {
+  color: #fafafc;
+  font-size: 3.125rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.home__subtitle {
+  color: rgba(125, 249, 255, 0.75);
+  font-size: 1.25rem;
+  font-style: italic;
+}
+.home__projects {
+  margin-top: 1.25rem;
+}
+.home__section-title {
+  color: #fafafc;
+  font-weight: 600;
+  font-size: 1.4375rem;
+}
+.home__projects-container {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
 }
 
 .app-layout {
@@ -4209,7 +4254,7 @@ html {
 }
 .app-layout__content {
   width: 80%;
-  background-color: red;
+  background-color: #191923;
   height: 100%;
 }
 
@@ -4223,8 +4268,62 @@ html {
 
 .divider {
   background: #646466;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   height: 1px;
   opacity: 0.3;
+}
+
+.project-card {
+  border-radius: 0.3125rem;
+  padding: 1rem;
+  background: #2d2d39;
+  transition: all 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+}
+.project-card__title {
+  color: #7df9ff;
+  margin-bottom: 0.3125rem;
+  font-size: 1.125rem;
+}
+.project-card__description {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.875rem;
+  line-height: 145%;
+}
+.project-card__head {
+  height: 8.125rem;
+}
+.project-card__divider {
+  margin: 0.875rem 0rem;
+}
+.project-card__technologies {
+  margin-top: 0.75rem;
+}
+.project-card__technologies img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin-right: 0.4375rem;
+}
+.project-card__actions {
+  margin-top: 1.25rem;
+}
+.project-card__action {
+  display: flex;
+  align-items: center;
+}
+.project-card__action a {
+  text-decoration: none;
+  color: #7df9ff;
+  margin-right: 0.4375rem;
+}
+.project-card__action i {
+  color: #7df9ff;
+  margin-top: 1px;
+}
+.project-card__message {
+  color: #7df9ff;
+  opacity: 0.6;
 }
