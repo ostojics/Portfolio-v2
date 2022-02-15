@@ -20,8 +20,12 @@
     line-height: 145%;
   }
 
+  &__head {
+    height: 8.125rem;
+  }
+
   &__divider {
-    margin-top: 0.625rem;
+    margin: 0.875rem 0rem;
   }
 
   &__technologies {
@@ -35,8 +39,6 @@
   }
 
   &__actions {
-    display: flex;
-    justify-content: space-between;
     margin-top: 1.25rem;
   }
 
@@ -54,5 +56,10 @@
       color: $electric-blue;
       margin-top: 1px;
     }
+  }
+
+  &__message {
+    color: $electric-blue;
+    opacity: 0.6;
   }
 }

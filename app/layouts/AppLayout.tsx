@@ -42,9 +42,12 @@ const AppLayout: React.FC = ({children}) => {
               <img src="/assets/icons/mongodb.svg" alt="mongodb" />
               <img src="/assets/icons/postgresql.svg" alt="postgresql" />
               <img src="/assets/icons/prisma.svg" alt="prisma" />
-              <img src="/assets/icons/nodejs.svg" alt="nodejs" />
-              <img src="/assets/icons/expressjs.svg" alt="express" />
+              <img src="/assets/icons/nodejs-icon.svg" alt="nodejs" />
+              <img src="/assets/icons/expressjs-icon.svg" alt="express" />
               <img src="/assets/icons/jest.svg" alt="jest" />
+              <img src="/assets/icons/firebase.svg" alt="Firebase" />
+              <img src="/assets/icons/stripe.svg" alt="Stripe" />
+              <img src="https://avatars.githubusercontent.com/u/64235328?s=200&v=4" alt="Remix Run" />
             </div>
           </div>
         </div>
